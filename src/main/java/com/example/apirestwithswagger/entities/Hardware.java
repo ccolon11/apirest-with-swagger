@@ -17,11 +17,21 @@ public class Hardware {
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    @ApiModelProperty("Autoincremental dummy key type Long")
    private Long id;
+
+   @Column
    private String product;
+
+   @Column
    private String model;
+
    @ApiModelProperty("Price in dollars, with two decimal places using point (.) as separator")
+   @Column
    private Double price;
+
+   @Column
    private Boolean online;
+
+   @Column
    private Integer number;
 
    // constructors
